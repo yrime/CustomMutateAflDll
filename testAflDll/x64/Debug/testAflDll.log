@@ -1,5 +1,7 @@
-﻿  dllmain.cpp
-  TestAfl.cpp
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: промежуточный каталог (x64\Debug\) содержит файлы, которые используются совместно с другим проектом (testAflDll.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+  pch.cpp
+  dllmain.cpp
+  CustomAflMutate.cpp
   Создание кода...
-     ╤ючфрхЄё  сшсышюЄхър C:\Users\user\source\repos\testAflDll\x64\Debug\testAflDll.lib ш юс·хъЄ C:\Users\user\source\repos\testAflDll\x64\Debug\testAflDll.exp
-  testAflDll.vcxproj -> C:\Users\user\source\repos\testAflDll\x64\Debug\testAflDll.dll
+     Создается библиотека C:\Users\user\source\repos\testAflDll\x64\Debug\CustomMutateAflDll.lib и объект C:\Users\user\source\repos\testAflDll\x64\Debug\CustomMutateAflDll.exp
+  testAflDll.vcxproj -> C:\Users\user\source\repos\testAflDll\x64\Debug\CustomMutateAflDll.dll

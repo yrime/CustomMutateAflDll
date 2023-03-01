@@ -3,7 +3,7 @@
 #pragma once
 
 //#ifdef TESTAFL_EXPORTS
-#define TESTAFL_API __declspec(dllexport)
+#define CUSTOM_MUTATE_API __declspec(dllexport)
 //#else
 //#define TESTAFL_API __declspec(dllimport)
 //#endif
@@ -27,14 +27,14 @@ typedef int64_t  s64;
 
 #define DEFAULT_PERMISSION  0600
 
-extern "C" TESTAFL_API u8 dll_mutate_testcase(
+extern "C" CUSTOM_MUTATE_API u8 dll_mutate_testcase(
 		char **argv, 
 		u8 *buf, 
 		u32 len, 
 		u8 (*common_fuzz_stuff)(char**, u8*, u32)
 );
 
-extern "C" TESTAFL_API void dll_write_to_testcase(
+extern "C" CUSTOM_MUTATE_API void dll_write_to_testcase(
 	u8* out_file, 
 	s32 out_fd, 
 	const void* mem, 
